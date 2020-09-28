@@ -1,7 +1,10 @@
 import React from 'react';
 
+// Bootstrap
+import { Container } from 'react-bootstrap';
+
 const Movie = () => {
-  return <div>Movies</div>;
+  return <Container>Movies</Container>;
 };
 
 export default Movie;
