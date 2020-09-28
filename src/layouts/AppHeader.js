@@ -13,18 +13,24 @@ const AppHeader = () => {
         </Link>
       </div>
       <div className={styles.nav__navigation}>
-        <div className='nav__item'>
-          <Link to='/movies' className={styles.nav__link}>
+        <div className={styles.nav__item}>
+          <Link to='/' className={styles.nav__link}>
             Movies
           </Link>
         </div>
-        <div className='nav__item'>
+        <div className={styles.nav__item}>
           <Link to='/about-us' className={styles.nav__link}>
             About
           </Link>
         </div>
       </div>
-      <div className={styles.nav__search}>SearchForm</div>
+      <div className={styles.nav__search}>
+        <input
+          className={styles.nav__input}
+          type='text'
+          placeholder='search for movies'
+        />
+      </div>
     </div>
   );
 };

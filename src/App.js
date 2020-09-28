@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import AppHeader from './layouts/AppHeader';
 import Movie from './pages/Movie';
+import About from './pages/About';
 
 const App = () => (
   <BrowserRouter>
@@ -13,6 +14,7 @@ const App = () => (
       <div className='app__main'>
         <Switch>
           <Route exact path='/' component={Movie} />
+          <Route exact path='/about-us' component={About} />
         </Switch>
       </div>
       <footer className='app__footer'></footer>

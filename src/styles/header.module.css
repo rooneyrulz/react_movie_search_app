@@ -30,9 +30,12 @@
     justify-content: space-around;
 }
 
+.nav__item {}
+
 .nav__link {
     color: #f4f4f4;
     text-decoration: none;
+    padding: 1rem;
 }
 
 .nav__link:hover {
@@ -42,4 +45,13 @@
 
 .nav__search {
     /* width: 30%; */
+}
+
+.nav__input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 1em;
+    color: #f4f4f4;
+    background: rgb(8, 73, 73);
 }
