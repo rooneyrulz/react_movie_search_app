@@ -1,0 +1,17 @@
+.movie__container {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+
+/* Movie Item Styles */
+
+.movie__item {
+    max-width: 200px;
+    padding: 1rem;
+    background: rgb(40, 146, 146);
+    border-radius: 1em;
+    box-shadow: 1px 2px 3px rgb(81, 243, 243);
+}

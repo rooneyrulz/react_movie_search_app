@@ -7,11 +7,21 @@ const MovieProvider = (props) => {
     movies: [],
   });
 
-  const setLoading = () => setMovieData({ ...movieData, loading: false });
+  const setLoading = (payload) =>
+    setMovieData({ ...movieData, loading: payload });
+
+  const setMovies = (payload) =>
+    setMovieData({ ...movieData, movies: [...payload] });
+
+  const filterMovie = (payload) =>
+    setMovieData({ ...movieData, movies: [...payload] });
 
   return (
-    <MovieContext.Provider value={{ ...movieData, setLoading }}>
-      {props.children}
+    <MovieContext.Provider
+      value={{ ...movieData, setLoading, setMovies, filterMovie }}
+    >
+      {' '}
+      {props.children}{' '}
     </MovieContext.Provider>
   );
 };

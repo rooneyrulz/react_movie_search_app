@@ -9,12 +9,15 @@ import AppHeader from './layouts/AppHeader';
 import Movie from './pages/Movie';
 import About from './pages/About';
 
+import { movies } from './movies';
+
 const App = () => {
-  const { loading, setLoading } = React.useContext(MovieContext);
+  const { loading, setLoading, setMovies } = React.useContext(MovieContext);
 
   React.useEffect(() => {
-    setTimeout(() => setLoading(), 1000);
-  });
+    setMovies(movies);
+    setLoading(false);
+  }, [loading]);
 
   return loading ? (
     <p>Loading...</p>
