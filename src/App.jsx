@@ -20,21 +20,21 @@ const App = () => {
   }, [loading]);
 
   return loading ? (
-    <p>Loading...</p>
+    <p> Loading... </p>
   ) : (
     <BrowserRouter>
       <>
         <header className='app__header'>
           <AppHeader />
-        </header>
+        </header>{' '}
         <div className='app__main'>
           <Switch>
-            <Route exact path='/' component={Movie} />
-            <Route exact path='/about-us' component={About} />
-          </Switch>
-        </div>
-        <footer className='app__footer'></footer>
-      </>
+            <Route exact path='/' component={Movie} />{' '}
+            <Route exact path='/about-us' component={About} />{' '}
+          </Switch>{' '}
+        </div>{' '}
+        <footer className='app__footer'> </footer>{' '}
+      </>{' '}
     </BrowserRouter>
   );
 };
