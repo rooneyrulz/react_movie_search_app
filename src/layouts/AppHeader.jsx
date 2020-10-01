@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import MovieContext from '../context/MovieContext';
 
 // Styles
-import styles from '../styles/header.module.css';
+import styles from '../styles/header/header.module.css';
 
 const AppHeader = () => {
   const { movies, filterMovie } = React.useContext(MovieContext);
@@ -22,7 +22,7 @@ const AppHeader = () => {
     <div className={styles.nav}>
       <div className={styles.nav__header}>
         <Link to='/' className={styles.nav__heading}>
-          Moviesearch
+          Movie Search
         </Link>
       </div>
       <div className={styles.nav__navigation}>

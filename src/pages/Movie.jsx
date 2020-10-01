@@ -4,10 +4,10 @@ import React from 'react';
 import MovieContext from '../context/MovieContext';
 
 // Bootstrap Components
-import { Container } from '../bootstrap.module';
+import { Container } from '../bootstrap';
 
 import MovieItem from '../components/MovieItem';
-import styles from '../styles/movie.module.css';
+import styles from '../styles/movie/movie.module.css';
 
 const Movie = () => {
   const { movies } = React.useContext(MovieContext);
